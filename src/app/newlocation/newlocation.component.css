@@ -1,0 +1,38 @@
+.card{
+    background-color: rgba(94, 94, 99);
+    width: 15%;
+    margin: 3rem auto;
+    padding: 2% 10%;
+    font-weight: bolder; 
+    text-align: center; 
+}
+
+button{
+    /* margin: 2rem 0; */
+    text-align: center;
+    border-radius: 15%;
+    border-color: yellow;
+    padding:8px;
+    width: 50%;
+    font-weight: bold;
+}
+
+
+input
+{
+    font-weight:bold;
+    border-radius: 2px;
+    height: 18px;
+}
+
+@media screen and (max-width: 800px) {
+    .card {
+      /* background-color: lightgreen; */
+      width: 60%;
+    }
+
+    .main-heading{
+        width: 60%;
+    }
+}
+  

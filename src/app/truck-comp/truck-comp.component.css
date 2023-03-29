@@ -1,0 +1,50 @@
+.text{
+    background-color: rgba(53,53,92, 0.555);
+    width: 60%;
+    margin: auto;
+    padding: 5% 0;
+    font-weight: bolder;
+}
+#tab{
+    margin: auto;
+}
+#login{
+    height: 30px;
+    width: 80px;
+}
+#username{
+    width: 250px;
+    height: 30px;
+}
+table {
+    border-radius: 50px;
+    border-color: black;
+    margin: 10px;
+    }
+#create,#availability,#update{
+    padding: 2% 2%;
+}
+
+th, td {
+    
+    padding: 8px;
+    text-align: justify;
+    
+  }
+  tr{
+    background-color: white;
+  }
+
+  
+  tr:nth-child(even){background-color:lightgray}
+  
+  th {
+    background-color:black;
+    color:white;
+    text-align: center;
+  }
+
+  
+  table{
+    margin: auto;
+  }

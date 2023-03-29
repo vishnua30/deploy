@@ -1,0 +1,38 @@
+<div id="whm" > 
+
+    <h3 class="main-heading">Inbound Requisition From</h3>
+  
+    <div class="card ">
+
+        <h3 class="side-heading">Location Analyzer</h3>
+    <table >
+        
+          <thead>
+            <th>S no</th>
+          <th >Rack Shelf</th>
+          </thead>
+          
+          
+        <tbody>
+
+        <tr class="loc"  *ngFor="let location of locations;index as i">
+        <td></td> <app-loactiondesc-comp  [location]="location" [i]="i" (tempBloc)="toggleComp(location)" ></app-loactiondesc-comp>
+         </tr>
+        </tbody>
+        
+        
+      </table>
+      <div>
+        <button type="submit" value="submit"  (click)="submit()">Temporary block </button>
+      </div>
+   
+    </div>
+  
+  </div>
+  
+  <!-- <td> {{i+1}} </td>
+  <td> <label [name]="post.id" [for]="post.id"  [(ngModel)]="post.description">{{post.description}}</label></td>
+  
+  <td>
+      <input  [id]="post.id" [value]="post.description" (onchange)="Check" type="checkbox"  >
+  </td> -->

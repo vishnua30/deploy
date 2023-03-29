@@ -1,0 +1,104 @@
+
+    <div class="card">
+        <h3 style="text-align: center;">Inbound Requisition Form</h3>
+            
+        <form class="f1" #inboundForm="ngForm" (ngSubmit)="submit(inboundForm.value)" >
+            <div class="row">
+                <div class="column1">
+                    <label class="lab">Product Name</label>
+                    <input class="inp" type="text"  #Product_name="ngModel" required name="Product_name" ngModel >
+                        
+                    <span *ngIf="Product_name.invalid && Product_name.touched">Please enter valid details</span>
+
+                        
+
+
+                    <label class="lab">Product Code</label>
+                    <input class="inp" type="number"  #Product_code="ngModel" required name="Product_code" ngModel >
+                            
+                    <span *ngIf="Product_code.invalid && Product_code.touched">Please enter valid details</span>
+
+                            
+
+
+                    <label class="lab">Batch no.</label>
+                    <input class="inp" type="number" #Batch_no="ngModel" required  name="Batch_no" ngModel >
+                        
+                    <span *ngIf="Batch_no.invalid && Batch_no.touched">Please enter valid details</span>
+                        
+
+
+                    <label class="lab">Product Dimension</label>
+                    <input class="inp dim" type="number" placeholder="Length"  #length="ngModel" required name="length" ngModel > 
+                    <input  class="inp dim" type="number" placeholder="Breadth"  #breadth="ngModel" required  name="breadth" ngModel >
+                    <input class="inp dim" type="number" placeholder="Height"  #height="ngModel" required  name="height" ngModel >
+                        
+                    <span *ngIf="length.invalid && length.touched && breadth.invalid && breadth.touched &&  height.invalid && height.touched">Please enter valid details</span>
+                      
+                    <label class="lab">Product Weight</label>
+                    <input class="inp" type="number" class="form-input" #product_weight="ngModel" required name="product_weight" ngModel >
+                        
+                    <span *ngIf="product_weight.invalid && product_weight.touched">Please enter valid details</span>
+
+                        
+
+                    <label class="lab">Product Qty.</label>
+                    <input class="inp" type="number" class="form-input" #product_quantiy="ngModel" required name="product_quantiy" ngModel >
+                        
+                    <span *ngIf="product_quantiy.invalid && product_quantiy.touched">Please enter valid details</span>
+                        
+                </div>
+    
+                <div class="column2">
+
+                    <label class="lab">Supplier Name</label>
+                    <input class="inp" type="text" #supplier_name="ngModel" required name="supplier_name" ngModel >
+                        
+                    <span *ngIf="supplier_name.invalid && supplier_name.touched">Please enter valid details</span>
+                        
+
+                    <label class="lab">Supplier Location</label>
+                    <input class="inp" type="text" #supplier_location="ngModel" required name="supplier_location" ngModel >
+                        
+                    <span *ngIf="supplier_location.invalid && supplier_location.touched">Please enter valid details</span>
+                        
+
+
+                    <label class="lab">Purchase Order no.</label>
+                    <input class="inp" type="number" #prod_order_no="ngModel" required name="prod_order_no" ngModel >
+                        
+                    <span *ngIf="prod_order_no.invalid && prod_order_no.touched">Please enter valid details</span>
+                        
+
+                    <label class="lab">Date of PO Insurance</label>
+                    <input class="inp" type="date" #date_of_po_insurance="ngModel" required name="date_of_po_insurance" ngModel>
+                        
+                    <span *ngIf="date_of_po_insurance.invalid && date_of_po_insurance.touched">Please enter valid details</span>
+                        
+
+                    <label class="lab">Date of Delivery</label>
+                    <input class="inp" type="date" #date_of_delivery="ngModel" required name="date_of_delivery" ngModel >
+                        
+                    <span *ngIf="date_of_delivery.invalid && date_of_delivery.touched">Please enter valid details</span>
+                           
+                </div>
+                    
+                    
+                
+            </div>
+                
+            <div class="button"> 
+            <button class="btn btn1" type="submit" name="save" [disabled]="inboundForm.invalid">Save</button>    
+            <button class="btn btn1" type="submit" name="register" value="submit" routerLink="location-analyse" [disabled]="inboundForm.invalid" ><b>Confirm</b></button>
+            
+        </div>
+            
+        </form>
+    
+        
+    </div>
+  
+    
+
+
+    

@@ -1,0 +1,35 @@
+<h2 class="main-heading">Add New Product</h2>
+
+<div class="card">
+    
+    <div class="add-product">
+      <form #addProduct="ngForm" (ngSubmit)="submit(addProduct.value)" class="common-form">
+
+      <input type="number" required #code="ngModel" class="form-input" placeholder="Enter Product Code" name="code" ngModel/>
+        
+        <span *ngIf="code.invalid && code.touched"> Invalid product code</span>
+        
+      <input type="text"  required #name="ngModel" class="form-input" pattern="[a-zA-Z]+$" placeholder="Enter Product Name" name="name" ngModel/> 
+        
+        <span *ngIf="name.invalid && name.touched">Please enter a valid input</span>
+          
+      <input type="text"  required #length="ngModel" size="5" class="form-input" placeholder="Length" name="length" ngModel/>
+          
+        <span *ngIf="length.invalid && length.touched">Please enter a valid length</span>
+          
+      <input type="text"  required #width="ngModel" size="5" class="form-input dim" placeholder="Width" name="width" ngModel/>
+          
+        <span *ngIf="width.invalid && width.touched">Please enter a valid width</span>
+          
+      <input type="text" required #height="ngModel" size="5" class="form-input dim" placeholder="Height" name="height" ngModel/>
+          
+        <span *ngIf="height.invalid && height.touched">Please enter a valid height</span>
+          
+      <input type="text"  required #weight="ngModel"class="form-input dim" placeholder="Enter Product Weight" name="weight" ngModel/>
+          
+        <span *ngIf="weight.invalid && weight.touched">Please enter a valid weight</span>
+          
+      <button class="form-button" [disabled]="addProduct.invalid">Add Product</button>
+    </form>
+    </div>
+  </div>

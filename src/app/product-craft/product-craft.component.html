@@ -1,0 +1,41 @@
+
+
+<div id="whm" > 
+      
+      
+    <div class="tab">
+    <table class="center ">
+      <thead>
+        <tr>
+          
+        </tr>
+       <tr>
+          <th>S No.</th>
+          <th>Product Name</th>
+          <th>Product Code</th>
+          <th>Transfer Type</th>
+          <th>Temporary/Current Location</th>
+          <th>Robot Status</th>
+          <th>Scanned Location</th>
+          <th>Validation</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr *ngFor="let d of data">
+              <td>{{d.S_No}}</td>
+              <td>{{d.Product_Name}}</td>
+              <td>{{d.Product_code}}</td>
+              <td>{{d.Transfer_type}}</td>
+              <td>{{d.Temporary_Location}}</td>
+              <td>{{d.Robot_status}}</td>
+              <td>{{d.Scanned_location}}</td>
+              <td>{{d.Validation}}</td>
+            </tr>
+        
+</tbody>
+</table>
+</div>
+<br>
+</div>
+ 
+

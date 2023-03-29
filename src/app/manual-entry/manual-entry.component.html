@@ -1,0 +1,65 @@
+
+    <h3 class="main-heading">Product Relocation</h3>
+
+    <div class="text">
+        
+        <h3 class="side-heading">Location Analyzer</h3>
+    <table class="center">
+        <tr>
+          
+          <th>Locations</th>
+          
+        </tr>
+       
+        <!-- <tr *ngFor="let location of locations;" >
+         
+            <app-loactiondesc-comp [location]="location" (tempBlock)="toggleComp(location)"></app-loactiondesc-comp>
+     
+          
+        
+        
+      </table>
+      <button type="submit" (click)="submit()" >Temporary block </button>
+     -->
+    <app-location-analyser (tempBl)="submit(location)"></app-location-analyser>   
+      
+ 
+
+
+<!-- 
+<div id="whm"> 
+
+    <h3 class="main-heading">Product Relocation</h3>
+
+    <div class="text">
+        
+<form #locationAnalyse="ngForm" (ngSubmit)="submit(locationAnalyse.value)"> 
+  
+
+        <h3 class="side-heading">Location Analyzer</h3>
+    <table class="center">
+        <tr>
+          <th>S no</th>
+          <th>Location</th>
+          <th></th>
+        </tr>
+       
+        <tr *ngFor="let post of posts;index as i">
+          <td > {{post.id}} </td>
+          <td> <label [name]="post.id" [for]="post.id"  [(ngModel)]="post.description">{{post.description}}</label></td>
+          
+          <td>
+              <input  [id]="post.id" [value]="post.description" (onchange)="Check" type="checkbox"  >
+          </td>
+        </tr>
+        
+        
+      </table>
+      <button type="submit" (todoTempBloc)="tempBlock($event)" >Temporary block </button>
+    </form>
+
+   
+      
+    </div>
+
+</div> -->

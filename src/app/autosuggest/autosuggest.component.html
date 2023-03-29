@@ -1,0 +1,76 @@
+<div id="whm" > 
+
+  
+
+    <div class="text">
+        <strong><h2 id="main-heading">Manual Location Entry</h2></strong><br>
+        
+    <table class="center">
+      <tr>
+        <th>Sno.</th>
+        <th>Rack</th>
+        <th>Shelf</th>
+        <th>Comments</th>
+      </tr>
+      <!-- <tr *ngFor="let post of posts">
+        <td>{{post.s no}}</td>
+        <td>{{post.location}}</td> 
+      </tr> -->
+      <tr>
+        <td>1</td>
+        <td>
+          <form #RackForm (ngSubmit)="submitRack(RackForm)"><input type="text" id="abc" [(ngModel)]="Rack" name="Rack"></form>
+            
+        </td>
+        <td>
+          <form #ShelfForm (ngSubmit)="submitShelf(ShelfForm)"><input type="text" id="abc" [(ngModel)]="Shelf" name="Shelf"></form>
+        </td>
+        <td>
+          <form #CommentForm (ngSubmit)="submitComment(CommentForm)"><input type="text" id="abc" [(ngModel)]="comment" name="comment"></form>
+        </td>
+        
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>
+            <input type="text" id="abc" name="rack" >
+        </td>
+        <td>
+            <input type="text" id="abc" name="shelf" >
+        </td>
+        <td>
+            <input type="text" id="abc" name="comments" >
+        </td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>
+            <input type="text" id="abc"  name="rack_03"  >
+        </td>
+        <td>
+            <input type="text" id="abc"  name="shelf_03" >
+        </td>
+        <td>
+            <input type="text" id="abc"  name="comments_03" >
+        </td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>
+          <input type="text" id="abc"  name="rack_04"  >
+      </td>
+      <td>
+          <input type="text" id="abc"  name="shelf_04" >
+      </td>
+      <td>
+          <input type="text" id="abc"  name="comments_04" >
+      </td>
+      </tr>
+      
+    </table>
+    <br><br>
+    <button  type="submit" name="register" value="submit" (click)="submitq()" >Temporary block</button><br><br>
+        
+    </div>
+    </div>
+    

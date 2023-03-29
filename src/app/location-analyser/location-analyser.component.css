@@ -1,0 +1,91 @@
+
+  .main-heading{
+    margin-top: 2rem;
+    background-color: rgb(160, 160, 165);
+    width: 30%;
+    padding: 8px;
+    margin: auto;
+}
+ 
+  th, td {
+    
+    padding: 8px;
+    text-align: justify;
+    
+  }
+  tr{
+    background-color: white;
+  }
+
+  
+  tr:nth-child(even){background-color:lightgray}
+  
+  th {
+    background-color:black;
+    color:white;
+    text-align: center;
+  }
+
+  thead{
+    text-align: center;
+  }
+  td{
+    /* text-align: right; */
+  }
+
+  .card{
+    /* background-color: rgb(77, 77, 84); */
+    width: 60%;
+    margin: auto;
+    padding: 5% 0;
+    font-weight: bolder;
+    margin-top: 1rem;
+    
+}
+
+  .loc{
+    background-color: rgb(192, 183, 183);
+    padding: auto;
+   align-content: center;
+  }
+  
+ table {
+    width:60%;
+    border-collapse: collapse;
+    width: 50%;
+    margin: auto;
+    /* text-align: justify; */
+  }
+  .side-heading{
+    color: white;
+    background-color: black;
+    width: 30%;
+    margin: 0 auto 1rem;
+    padding: 5px 10px;
+}
+
+button{
+  margin: 2rem 0;
+  text-align: center;
+  border-radius: 15%;
+  border-color: yellow;
+  padding: 10px;
+  width: 150px;
+  
+}
+
+tbody{
+  text-align: left;
+}
+
+@media screen and (max-width: 900px) {
+
+  .card{
+    width: 70%;
+  }
+
+  table{
+    width: 70%;
+  }
+
+}

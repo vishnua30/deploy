@@ -1,0 +1,75 @@
+
+
+
+    <div id="whm" > 
+    <h1 ><strong >WARE-YOU-GO</strong></h1><br>
+    <strong><h2>Digitilzation of Warehouses</h2></strong>
+    
+    <div class="text">
+    <form #truckservice="ngForm" (ngSubmit)="submit(truckservice.value)">
+    <strong><h3><u>Truck Request / Status</u></h3></strong><br>
+    ------------------------------------------------------------------------------------------------------------------------------<br><br>
+    <button id="create" (click)="toggleswitch()">Create Request</button><button id="update" style="margin-left: 60px;" (click)="togswitchs()">Update Status</button><br><br>
+    ------------------------------------------------------------------------------------------------------------------------------<br><br>
+    <div *ngIf="toggle" id="tab">
+        <h3>Fill the below details</h3>
+    Product : <input id="product" type="text" placeholder="Product name" required style="margin-left: 70px;" #Product_name="ngModel" name="Product_name" ngModel><br><br>
+    Product Quantity: <input id="quantity"type="number" placeholder="Product Quantity" style="margin-left: 10px;" #quantity="ngModel" name="quantity" required ngModel><br><br>
+    Delivery Date : <input id="date" type="date" placeholder="Enter Delivery Date" style="margin-left: 30px;" #date="ngModel" name="date" required ngModel><br><br>
+    Delivery Location : <input id="location" type="text" placeholder="Enter Delivery Location" #location="ngModel" name="location" required ngModel>
+    <br><br><br>
+    <button id="availability" type="submit" (click)="toggleswitchs()" [disabled]="truckservice.invalid">Check Availability</button><br><br><br>
+    <div *ngIf="toggles">
+        <table>
+            <tr>
+                <th >TruckID</th>
+                <th >Truck Number</th>
+                <th >DriverID</th>
+                <th >License Number</th>
+                <th >Phone Number</th>
+                <th >Rate PerKm</th>
+            </tr>
+            <tr *ngFor="let truck of trucks">
+                <td>{{truck.tId}}</td>
+                <td>{{truck.tNo}}</td>
+                <td>{{truck.dId}}</td>
+                <td>{{truck.lNo}}</td>
+                <td>{{truck.pNo}}</td>
+                <td>{{truck.rpm}}</td>
+            </tr>
+            <!-- {tId: 100, tNo: 'KA 01 NA 5010', dId: 1011,lNo:'KA01 24812387',pNo:'77786489337',rpm:'100'}, -->
+            <!-- <tr>
+                <td>105</td>
+                <td>KA 04 GA 1050</td>
+                <td>2011</td>
+                <td>KA02 3422387</td>
+                <td>9454358937</td>
+                <td>45</td>
+            </tr>
+            <tr>
+                <td>106</td>
+                <td>KA 35 DF 8989</td>
+                <td>2023</td>
+                <td>KA14 3422387</td>
+                <td>8854358933</td>
+                <td>60</td>
+            </tr>
+            <tr>
+                <td>109</td>
+                <td>KA 17 AS 8090</td>
+                <td>2122</td>
+                <td>KA54 2434333</td>
+                <td>9988778933</td>
+                <td>55</td>
+            </tr> -->
+        </table>
+    </div>
+    </div>
+    <div *ngIf="tog">
+    <h3>Status :{{status}}</h3>
+    </div>
+    </form>
+    </div>
+    <br><br>
+    </div>
+  

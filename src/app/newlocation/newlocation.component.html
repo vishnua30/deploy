@@ -1,0 +1,43 @@
+
+    
+    <h2 class="main-heading">Add New Location</h2>
+    <form  class="card" #addLocation="ngForm" (ngSubmit)="add(addLocation.value)">
+
+
+      <label for="locationId" >Location ID:</label>
+      <input type="number" id="locationId" #location_id="ngModel" required type="number" class="form-input" placeholder="Enter location id" name="location_id" ngModel/>
+      <br>
+      <span *ngIf="location_id.invalid && location_id.touched">Please enter a valid input</span>
+      <br>
+  
+      
+      <label for="description">Description:</label>
+      <input type="text" id="description" #loc_description="ngModel" required type="text" class="form-input" placeholder="Enter Description"  name="loc_description" ngModel  >
+      <br>
+      <span *ngIf="loc_description.invalid && loc_description.touched">Please enter a valid input</span>
+      <br>
+
+
+      <label for="length">Length:</label>
+      <input type="number" id="length" #length="ngModel" required type="number" class="form-input" placeholder="Enter length" name="Length"  ngModel>
+      <br>
+      <span *ngIf="length.invalid && length.touched">Please enter a valid input</span>
+      <br>
+
+
+      <label for="width">Width:</label>
+      <input type="number" id="width" #width="ngModel" required type="number" class="form-input" placeholder="Enter Width" name="width" ngModel ><br>
+      <span *ngIf="width.invalid && width.touched">Please enter a valid input</span>
+      <br>
+
+      <label for="height">Height:</label>
+      <input type="number" id="height" #height="ngModel" required type="number" class="form-input" placeholder="Enter height" name="height" ngModel >
+      <br>
+      <span *ngIf="height.invalid && height.touched">Please enter a valid input</span>
+      <br>
+
+
+      <button type="submit" [disabled]="addLocation.invalid" >Submit</button><br/><br/>
+      <button type="reset">Reset</button>
+    </form>
+    

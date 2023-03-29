@@ -1,0 +1,39 @@
+
+.main-heading{
+    margin-top: 2rem;
+    background-color: rgb(160, 160, 165);
+    width: 25%;
+    padding: 8px;
+    margin: auto;
+}
+
+
+.side-heading{
+    color: white;
+}
+
+ 
+
+  .card{
+    /* background-color: rgb(77, 77, 84); */
+    width: 45%;
+    /* height: 50%; */
+    margin: auto;
+    padding: 5% ;
+    font-weight: bolder;
+    margin-top: 1rem;
+    
+}
+
+
+
+  button{
+    margin: 6rem 0 1rem;
+    text-align: center;
+    border-radius: 15%;
+     
+    border-color: red;
+    padding: 10px;
+    
+  }
+  

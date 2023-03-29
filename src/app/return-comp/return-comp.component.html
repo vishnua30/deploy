@@ -1,0 +1,29 @@
+
+
+<h1 align ="center">Return of the Product</h1>
+<h3>
+<div class="return card">
+    <form #returnProductForm="ngForm" (ngSubmit)="submit(returnProductForm.value)">
+    
+        Stock ID:<input type="number" name="id" ngModel><br><br>
+        Stock Name:<input type="text" name="name" ngModel><br><br>
+        Stock Type: <input type="text" name="type" ngModel><br><br>
+    	Status: 
+        <input type="radio" id="damaged" name="Status" value="Damage" ngModel>
+        <label for="damage">Damage</label>
+         <input type="radio" id="notdamaged" name="Status" value="Not_Damaged" ngModel>
+         <label for="notdamaged">Not Damaged</label><br><br>
+         <p align="center">Reason: 
+        <textarea id="reason" name="reason" rows="1" cols="30"></textarea></p><br><br>
+
+            <div class="button">
+                <input type="submit" name="submit" value="Submit">&nbsp;
+                </div>
+                &nbsp;
+                <div class="button">
+                <input type="reset" name="reset" value="Reset">
+            </div>
+    
+</form>
+</div>
+</h3>

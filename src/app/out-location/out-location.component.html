@@ -1,0 +1,26 @@
+
+
+<div class="whm">
+  <form >
+    <table class="center">
+      <tr>
+        
+        <th>Location</th>
+        
+      </tr>
+     
+      
+      <tr *ngFor="let location of locations">
+       <td>
+        <app-loactiondesc-comp [location]="location"  (click)="toggleComp(location)"></app-loactiondesc-comp>
+       
+        
+           
+        </td>
+      </tr>
+    </table>
+  
+  </form>
+    </div>
+
+  

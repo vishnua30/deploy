@@ -1,0 +1,211 @@
+
+<h3 class="main-heading">Product Relocation</h3><br>
+
+    <div class="form1">
+        <form #relocationForm="ngForm" (ngSubmit)="submit(relocationForm.value)"  >
+          <div class="row">
+            <div class="column">
+            <label class="lab"for="reason">Relocation Reason</label>
+          <select name="reason" id="reason" name="RelocReason" ngModel>
+            <option value="">None</option>
+            <option value="internal" >Internal Movement</option>
+            <option value="return">Rejection/Return</option>
+            <option value="damage">Damaged</option>
+          </select><br><br>
+          <label class="lab">Product Name</label>
+          <input  class="inp" type="text" #product_name="ngModel" required name="product_name" ngModel >
+          <br>
+
+          <br>
+
+
+          <label class="lab">Product code</label>
+          <input name="pcode" class="inp" type="text" #pcode="ngModel" required ngModel>
+          <br>
+          <br>
+
+
+          <label class="lab">Batch No.</label>
+          <input #batchno="ngModel" required name="batchno" class="inp" type="text" ngModel>
+          <br><br>
+
+          <label class="lab">Product Dimension</label>
+          <input #length="ngModel"required name="length" class="inp three" type="text" placeholder="Length" style="width:49px" ngModel>
+          <input  #breadth="ngModel" required name="breadth" class="inp three" type="text" placeholder="Breadth" style="width:49px"ngModel>
+          <input  #height="ngModel"required name="height" class="inp three" type="text" placeholder="Height" style="width:49px"ngModel>
+          <br><br>  
+
+
+          <label class="lab">Product Weight</label>
+          <input  #weight="ngModel" required name="weight" class="inp" type="text" ngModel>
+          <br>
+          <br>
+
+
+            </div>
+            <div class="column">
+              <label class="lab"  >Supplier Name</label>
+              <input name="sname" #supplier_name="ngModel" required class="inp" type="text" ngModel>
+              <br><br>
+              <label class="lab">Supplier Location</label>
+              <input name="slocation" #slocation="ngModel" required class="inp" type="text" ngModel>
+              <br><br>
+              <label class="lab">Purchase Order no.</label>
+              <input name="ponumber" #ponumber="ngModel" required class="inp" type="text" ngModel>
+              <br><br>
+              <label class="lab">Date of PO Insurance</label>
+              <input name="podate" #podate="ngModel" required class="inp" type="date" ngModel>
+              <br><br>
+              <label class="lab">Date of Delivery</label>
+              <input name="ddate" #ddate="ngModel" required class="inp" type="date" ngModel>
+              <br><br>    
+            </div>
+          </div> 
+          <br>
+          <div class="comment">
+          <label class="lab">Comments</label>
+          <input name="comment" #comment="ngModel" required class="inp" type="text" placeholder="Write your comments" style="width:66%; display:inline-block " ngModel>
+        </div><br><br><br>
+        <div class="column1" ><button  type="submit" name="save" value="submit" [disabled]="relocationForm.invalid">Save</button></div>
+            <div class="column1" ><button  name="register" value="submit" routerLink="manual-entry" [disabled]="relocationForm.invalid" >Location Suggestions</button></div>
+            <div class="column1"><button  name="manualEntry" value="submit" routerLink="autosuggest"[disabled]="relocationForm.invalid">Manual Entry</button></div>
+        </form>
+      </div>
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<div class="text">
+    <form action="">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    
+                        <label for="reason">Relocation Reason ✴ : </label>  
+                        <select name="reason" >
+                            <optgroup label="Reason">
+                            <option value="volvo">Internal Movement</option>
+                            <option value="saab">Rejection/Return</option>
+                            <option value="opel">Damaged</option>
+                        </optgroup>
+                            
+                          </select>
+                      
+                </div>
+                <div class="col-6">
+                    <label for="sname">Supplier Name :  </label>  
+                    <input type="text" size="30"  placeholder="">
+                </div>
+            </div>
+        <div class="row">
+        <div class="col-6">
+            
+                <label for="pname">Product Name : </label>  
+                <input type="text" size="30" placeholder="">
+              
+        </div>
+        <div class="col-6">
+            <label for="sname">Supplier Name :  </label>  
+            <input type="text" size="30"  placeholder="">
+        </div>
+    </div>
+     <div class="row">
+        <div class="col-6">
+            
+                <label for="pcode">Product Code : </label>  
+                <input type="text" size="30" placeholder="">
+              
+        </div>
+        <div class="col-6">
+            <label for="sloc">Supplier Location :  </label>  
+            <input type="text" size="30"  placeholder="">
+        </div>
+    </div> 
+     <div class="row">
+        <div class="col-6">
+            
+                <label for="bno">Batch no : </label>  
+                <input type="text" size="30" placeholder="">
+              
+        </div>
+        <div class="col-6">
+            <label for="pono">Purchase Order no :  </label>  
+            <input type="text" size="30"  placeholder="">
+        </div>
+    </div> 
+     <div class="row">
+        <div class="col-6">
+            
+                <label for="pdim">Product Dimesnsions </label>  
+                <input type="text" size="8" placeholder="length">
+                <input type="text" size="8" placeholder="Breadth">
+                <input type="text" size="8" placeholder="Height">
+              
+        </div>
+        <div class="col-6">
+            <label for="ddate">Date of Delivery :  </label>  
+            <input type="text" size="30"  placeholder="">
+        </div>
+    </div> 
+    <div class="row">
+        <div class="col-6">
+            <label for="pweight">Product Weight :  </label>  
+            <input type="text" size="30"  placeholder="">
+        </div>
+    </div>
+    
+</div>
+    </form>
+
+</div>
+
+
+<br>
+<br>
+
+<a routerLink="autosuggest"> Manual Entry</a>
+<a routerLink="manual-entry">Automatic suggestion</a>
+<router-outlet></router-outlet> -->

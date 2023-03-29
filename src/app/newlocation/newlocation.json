@@ -1,0 +1,31 @@
+
+{
+    "location_id_01": [
+      {
+        "location_id":1,
+        "description":111,
+        "product_name":"Nike",
+        "length":22,
+        "width":77,
+        "height":33
+      }
+    ],
+    "location_id_02": [
+      {
+        "location_id":2,
+        "product_code":119,
+        "product_name":"Puma",
+        "length":22,
+        "width":77,
+        "height":33
+      }
+    ],
+    "location_id_03": {
+        "location_id":3,
+      "product_code":111,
+      "product_name":"Ajo",
+      "length":22,
+      "width":77,
+      "height":33
+    }
+  }

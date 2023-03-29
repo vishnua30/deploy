@@ -1,0 +1,19 @@
+.text{
+    background-color: rgba(53,53,92, 0.555);
+    width: 40%;
+    margin: 6rem auto;
+    padding: 2% 0;
+    font-weight: bolder;
+    
+}
+
+.pro-pic{
+    border-radius: 100%;
+    /* background-color: white; */
+    width: 17%;
+   
+}
+
+.details{
+    color: white;
+}

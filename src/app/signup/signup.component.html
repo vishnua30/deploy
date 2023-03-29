@@ -1,0 +1,18 @@
+<div class="text">
+
+
+
+    <h3>Sign Up</h3>
+    <form #loginForm="ngForm" (ngSubmit)="submit(loginForm.value)">
+        
+        <label for="username" >Username: </label>
+        <input type="text" name="username" ngModel><br><br>
+        <label for="email" >Email: </label>
+        <input type="email" name="email" ngModel><br><br>
+        <label for="username" >Password: </label>
+        <input type="password" name="password" ngModel><br><br>
+        <button type="submit" name="submit" routerLink="">Sign Up</button>
+        
+    </form>
+    
+    </div>

@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    background-image: url("assets/warehouse.jpeg");
+    background-size: cover;
+    width: 100%;
+    text-align: center;
+    /* cursor: url("assets/150192.svg"); */
+}
+
+
+.card{
+    background-color: rgba(94, 94, 99);
+}
+
+.main-heading{
+    margin-top: 2rem;
+    background-color: rgb(160, 160, 165);
+    width: 30%;
+    padding: 8px;
+    margin: auto;
+}

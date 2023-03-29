@@ -1,0 +1,29 @@
+.text{
+    background-color: rgba(53,53,92, 0.555);
+    width: 40%;
+    margin: 6rem auto;
+    padding: 2% 0;
+    font-weight: bolder;
+    
+}
+#login{
+    height: 30px;
+    width: 80px;
+}
+#username{
+    width: 250px;
+    height: 30px;
+}
+#whm {
+    /* background-image: url("https://jan-pro.ca/wp-content/uploads/2018/10/Oct-3-janpro-blog.jpg"); */
+   
+    background-size: cover;
+    width: 100%;
+    text-align: center;
+}
+
+Button{
+    background-color:rgba(53,53,92,0.578) ;
+    color: white;
+    margin: .5rem .4rem;
+}

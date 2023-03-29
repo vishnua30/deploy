@@ -1,0 +1,23 @@
+[
+    {
+        "product_code":111,
+        "product_name":"Nike",
+        "length":22,
+        "width":77,
+        "height":33
+    },
+    {
+        "product_code":222,
+        "product_name":"Puma",
+        "length":22,
+        "width":77,
+        "height":363
+    },
+    {
+        "product_code":333,
+        "product_name":"Ajio",
+        "length":212,
+        "width":77,
+        "height":343
+    }
+]

@@ -1,0 +1,45 @@
+h1{
+    text-align: center;
+}
+.card{
+    /* background-color: darkgrey; */
+    width:70%;
+    border: 0.15rem solid rgb(39, 40, 39);
+    padding: 2rem; 
+    margin: 2rem;
+    margin-right: auto;
+    margin-left: auto;
+    text-align:left;
+    
+    
+}
+
+button{
+    margin: 2rem 0;
+    text-align: center;
+    border-radius: 15%;
+    border-color: yellow;
+    padding: 10px;
+    width: 150px;
+    padding: 5px 5px;
+}
+
+label{
+    margin: 0 .5rem;
+}
+
+@media screen and (max-width: 800px) {
+    card {
+      /* background-color: lightgreen; */
+      width: 90%;
+    }
+    label{
+        display: block;
+        
+    }
+
+    input{
+        margin-bottom: 1rem;
+    }
+  
+}

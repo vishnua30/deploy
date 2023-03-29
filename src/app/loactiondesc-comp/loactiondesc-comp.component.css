@@ -1,0 +1,17 @@
+.text{
+    background-color: rgba(94, 94, 99);
+    width: 60%;
+    margin: auto;
+    padding: 5% 0;
+    font-weight: bolder;
+    margin-top: 1rem;
+}
+div{
+    display: inline-flex;
+    margin-right: 20px;
+}
+td{
+    padding: 10px;
+    text-align: left;
+    display: inline-flex;
+}
